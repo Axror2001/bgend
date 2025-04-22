@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="">Asosiy</a>
+                <a class="nav-link active" href="{% url 'home' %}">Asosiy</a>
             </li>
             <li class="nav-item">   
-                <a class="nav-link" href="abaut_us.html">BIz haqimizda</a>
+                <a class="nav-link" href="{% url 'about_us' %}">BIz haqimizda</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="abaut_us.html">Yonalishlar</a>
@@ -57,10 +57,9 @@
                         Kelajak kasblarini chuqur organing va professional karyerangisni boshlang
                     </p>
 
-                    <div class="mt-5">
-                        <a href="#" class="btn btn-primary btn-lg me-3">Qabulga yoziling</a>
-                        <a href="#" class="btn btn-outline-light  btn-lg me-3">Virtual Tour</a>
-                    </div>
+                   {% block hero%}
+                   
+                   {% endblock%}
                 </div>
             </div>
         </div>
