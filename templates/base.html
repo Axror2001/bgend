@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="{% url 'home' %}">Asosiy</a>
+                <a class="nav-link {% if current_url == 'asosiy' %}active{% endif%}" href="{% url 'home' %}">Asosiy</a>
             </li>
             <li class="nav-item">   
-                <a class="nav-link" href="{% url 'about_us' %}">BIz haqimizda</a>
+                <a class="nav-link {% if current_url == 'biz-haqimizda' %}active{% endif%}" href="{% url 'about_us' %}">BIz haqimizda</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="abaut_us.html">Yonalishlar</a>
